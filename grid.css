@@ -1,0 +1,148 @@
+*{ margin: 0;}
+
+.parent{
+    display: grid;
+
+     /* grid-template-columns: [grid-start] 1fr [columns-start] 1f [columns-end] 1fr [grid-end]; */
+     grid-template-columns: 
+     [grid-start sim-start] 1fr
+      [columns-start] 1fr
+      [columns-end sim-end] 1fr
+        [grid-end]; 
+
+    /* 1fr minmax(10px,min-content) 1fr; */
+      /* repeat(auto-fill,50px); */
+     /* 1fr repeat(2,50px 150px) 1fr; */
+     /* repeat(4, 1fr); */
+
+     /* grid-template-rows: 50px ; */
+     grid-template-rows: 
+     [heaber-start] 1fr 
+     [heaber-end body-start sim-start] 5fr 
+     [body-end footer-start] 1fr
+     [footer-end sim-end] ;
+       /* grid-auto-rows:50px;   */
+      /* grid-auto-rows:minmax(20px, max-content); */
+
+      /*  כל מה שלא מוגדר  בררת מחדל שורות */ 
+     /* grid-auto-flow: row;*/
+     /* grid-auto-flow: column; */
+ 
+grid-gap: 4px;
+}
+
+.aa1{
+    grid-column: grid-start /grid-end;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+}
+.aa2{
+grid-area: sim;
+    /* grid-area: body-start/grid-start/footer-end /columns-end; */
+
+    /* grid-column: grid-start/columns-start;
+    grid-row: 2/3; */
+}
+
+.aa3{
+    
+    grid-column: columns-end /grid-end;
+    grid-row: 2/3;
+}
+.aa4{
+    grid-area: body-end/columns-end;
+    /* grid-column: columns-end/grid-end;
+    grid-row: 2/3; */
+}
+.aa5{
+  
+    /* grid-column: 4/-1; */
+    grid-column: grid-start / grid-end;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#a1{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a2{
+    background-color: aqua;
+    border: 4px solid rgb(72, 180, 207);
+
+}
+#a3{
+    background-color: rgb(115, 31, 172);
+    /* background-color: yellowgreen; */
+    border: 4px solid rgb(199, 31, 176);
+
+}
+#a4{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a5{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a6{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a7{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a8{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a9{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
+#a10{
+    background-color: yellowgreen;
+    border: 4px solid red;
+
+}
