@@ -5,8 +5,10 @@ body{
     text-align: center;
 }
 .container{
+    background-color: pink;
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; */
     grid-auto-rows: 100px 300px;
     grid-gap:10px;
     grid-auto-flow: dense;
@@ -14,18 +16,22 @@ body{
 .gallery-iten{
     width: 100%;
     height: 100%;
+    /* text */
     position: relative;
 }
 .gallery-iten .image{
     width: 100%;
     height: 100%;
+    /* כדי שהתמונה תישאר בתוך הגריד */
     overflow: hidden;
 }
 
 .gallery-iten .image img{
     width: 100%;
     height: 100%;
+    /*  חותך את התמונה לגודל הגריד */
     object-fit: cover;
+
     object-position: 50% 50%;
     transition: .5s ease-in-out;
 }
@@ -35,8 +41,12 @@ body{
 }
 
 .gallery-iten .text{
+    /* טקסט במצב 0 */
 opacity: 0;
+
+/* טקסט   על  התמונה */
 position: absolute;
+
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
